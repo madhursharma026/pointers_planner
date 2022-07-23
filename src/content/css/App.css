@@ -1,0 +1,103 @@
+.header_after_lg_scrn {
+    display: none;
+}
+
+.main_heading {
+    padding-top: 50px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: 600;
+    color: #B89562;
+}
+
+.sub_heading {
+    padding-top: 50px;
+    font-family: Georgia, serif;
+    font-weight: 600;
+    color: #597582;
+}
+
+.sub_heading_with_color {
+    font-family: Georgia, serif;
+    font-weight: 600;
+    color: #B89562;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.go_to_gallary_btn {
+    border-end-end-radius: 20px;
+    border-start-end-radius: 20px;
+    border-end-start-radius: 20px;
+    border-start-start-radius: 20px;
+    color: #B89562;
+}
+
+.go_to_gallary_btn:hover {
+    background: #B89562;
+    color: #000;
+}
+
+@media (min-width: 992px) {
+    .go_to_gallary_btn {
+        float: right;
+    }
+}
+
+@media (max-width: 991px) {
+    .header_before_lg_scrn {
+        display: none;
+    }
+
+    .header_after_lg_scrn {
+        display: block;
+    }
+
+    .serviceBox3 {
+        display: none;
+    }
+
+    .go_to_gallary_btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .serviceBox2 {
+        display: none;
+    }
+
+    .luxury_wedding8 {
+        display: none;
+    }
+
+    .luxury_wedding7 {
+        display: none;
+    }
+
+    .luxury_wedding6 {
+        display: none;
+    }
+
+    .luxury_wedding5 {
+        display: none;
+    }
+
+    .makeup3 {
+        display: none;
+    }
+
+    .decoration3 {
+        display: none;
+    }
+
+    .footer_options{
+        text-align: center;
+    }
+}
