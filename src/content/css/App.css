@@ -66,6 +66,9 @@
     .go_to_gallary_btn {
         width: 100%;
     }
+    .videography4{
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -97,7 +100,11 @@
         display: none;
     }
 
-    .footer_options{
+    .footer_options {
         text-align: center;
+    }
+
+    .videography3{
+        display: none;
     }
 }

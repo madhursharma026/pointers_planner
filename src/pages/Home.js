@@ -165,7 +165,7 @@ function Home() {
             </div>
 
             <div className="decoration_div container-xl px-3 pt-4 pb-md-4">
-                <button type="button" class="btn go_to_gallary_btn px-3" style={{ border: "1px solid #D8C5AA" }}><b>Go to Gallary <i class="fa fa-long-arrow-right"></i></b></button>
+                <button type="button" class="btn go_to_gallary_btn px-3" style={{ border: "1px solid #D8C5AA" }}><b>Go to Gallery <i class="fa fa-long-arrow-right"></i></b></button>
             </div>
 
             <br />

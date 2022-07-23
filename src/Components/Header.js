@@ -1,11 +1,22 @@
 import { Link } from 'react-router-dom';
-import Home from '../pages/Home';
 import Logo from '../content/images/Logo.png'
+import React, { useEffect, useState } from "react";
 
 function Header() {
+    const [headerBoxShadow, setHeaderBoxShadow] = useState(false);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", () =>
+                setHeaderBoxShadow(window.pageYOffset > 200)
+            );
+        }
+    }, []);
+
+
     return (
         <>
-            <nav class="navbar navbar-expand-lg bg-light header_before_lg_scrn">
+            <nav class="navbar navbar-expand-lg bg-light header_before_lg_scrn" style={{ boxShadow: `${headerBoxShadow ? "0 4px 2px -2px rgba(0, 0, 0, .2)" : ""}` }}>
                 <div class="container-fluid">
                     <Link class="navbar-brand" to="/">
                         <img src={Logo} alt="#ImgNotFound" style={{ width: "200px" }} />
@@ -16,16 +27,16 @@ function Header() {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item px-2">
-                                <Link class="nav-link active" aria-current="page" to="/"><b>Home</b></Link>
+                                <Link class="nav-link" aria-current="page" to="/"><b>Home</b></Link>
                             </li>
                             <li class="nav-item px-2">
                                 <Link class="nav-link" to="/"><b>About</b></Link>
                             </li>
                             <li class="nav-item px-2">
-                                <Link class="nav-link" to="/"><b>Gallery</b></Link>
+                                <Link class="nav-link" to="/gallery"><b>Gallery</b></Link>
                             </li>
                             <li class="nav-item px-2">
-                                <Link class="nav-link" to="/"><b>Services</b></Link>
+                                <Link class="nav-link" to="/services"><b>Services</b></Link>
                             </li>
                             <li class="nav-item px-2">
                                 <Link class="nav-link" to="/"><b>Reserved the date</b></Link>
@@ -63,16 +74,16 @@ function Header() {
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-3">
                                         <li class="nav-item px-2">
-                                            <Link class="nav-link active" aria-current="page" to="/"><b>Home</b></Link>
+                                            <Link class="nav-link" aria-current="page" to="/"><b>Home</b></Link>
                                         </li>
                                         <li class="nav-item px-2">
                                             <Link class="nav-link" to="/"><b>About</b></Link>
                                         </li>
                                         <li class="nav-item px-2">
-                                            <Link class="nav-link" to="/"><b>Gallery</b></Link>
+                                            <Link class="nav-link" to="/gallery"><b>Gallery</b></Link>
                                         </li>
                                         <li class="nav-item px-2">
-                                            <Link class="nav-link" to="/"><b>Services</b></Link>
+                                            <Link class="nav-link" to="/services"><b>Services</b></Link>
                                         </li>
                                         <li class="nav-item px-2">
                                             <Link class="nav-link" to="/"><b>Reserved the date</b></Link>
