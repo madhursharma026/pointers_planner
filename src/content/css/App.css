@@ -44,6 +44,11 @@
     color: #000;
 }
 
+
+.profile_data_after_md_srcn {
+    display: none;
+}
+
 @media (min-width: 992px) {
     .go_to_gallary_btn {
         float: right;
@@ -66,7 +71,8 @@
     .go_to_gallary_btn {
         width: 100%;
     }
-    .videography4{
+
+    .videography4 {
         display: none;
     }
 }
@@ -104,7 +110,15 @@
         text-align: center;
     }
 
-    .videography3{
+    .videography3 {
         display: none;
+    }
+
+    .profile_data_before_md_srcn {
+        display: none;
+    }
+
+    .profile_data_after_md_srcn {
+        display: block;
     }
 }

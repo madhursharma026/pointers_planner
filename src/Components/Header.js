@@ -50,9 +50,11 @@ function Header() {
                     <div class="btn-group dropstart p-3">
                         <i class="fa fa-user-circle-o" data-bs-toggle="dropdown" style={{ fontSize: "22px", cursor: "pointer" }}></i>
                         <ul class="dropdown-menu">
-                            <Link to="/" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>My profile</li></Link>
-                            <Link to="/" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>My profile</li></Link>
-                            <Link to="/" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>My profile</li></Link>
+                            <Link to="/my_profile" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>My profile</li></Link>
+                            <Link to="/my_profile/order" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>Orders</li></Link>
+                            <Link to="/my_profile/user" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>Users</li></Link>
+                            <Link to="/my_profile/emails" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>Emails</li></Link>
+                            <Link to="/my_profile/setting" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>Setting</li></Link>
                         </ul>
                     </div>
                 </div>
@@ -101,9 +103,11 @@ function Header() {
                                 <div class="btn-group dropstart p-3">
                                     <i class="fa fa-user-circle-o" data-bs-toggle="dropdown" style={{ fontSize: "22px", cursor: "pointer" }}></i>
                                     <ul class="dropdown-menu">
-                                        <Link to="/1" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>My profile</li></Link>
-                                        <Link to="/2" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>My profile</li></Link>
-                                        <Link to="/3" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>My profile</li></Link>
+                                        <Link to="/my_profile" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>My profile</li></Link>
+                                        <Link to="/my_profile/order" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>Orders</li></Link>
+                                        <Link to="/my_profile/user" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>Users</li></Link>
+                                        <Link to="/my_profile/emails" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>Emails</li></Link>
+                                        <Link to="/my_profile/setting" style={{ textDecoration: "none" }}><li className='px-3 py-2 text-dark'>Setting</li></Link>
                                     </ul>
                                 </div>
                             </div>
