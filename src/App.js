@@ -12,6 +12,8 @@ import MyProfileOrder from './pages/ProfilePages/MyProfileOrder';
 import MyProfileUser from './pages/ProfilePages/MyProfileUser';
 import MyProfileEmails from './pages/ProfilePages/MyProfileEmails';
 import SendEmail from './pages/ProfilePages/SendEmail';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="/my_profile/emails" element={<><MyProfile page={<MyProfileEmails />} /> <title>Pointer Planner- My Profile(Emails)</title></>} />
           <Route path="*" element={<><NoPage /> <title>Error 404</title></>} />
         </Route>
+        <Route path="/login" element={<><Login /> <title>Pointer Planner- Login</title></>} />
+        <Route path="/signup" element={<><Signup /> <title>Pointer Planner- Signup</title></>} />
       </Routes>
     </Router>
   );
