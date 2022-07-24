@@ -1,3 +1,24 @@
+#img_upper_left {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvnTMeVOX2O_QD-pjdGT3vSBbiFfv0eVB84O2wjg5SoBOIgfGfIg2lU7n_g9VNHH0KJQg&usqp=CAU");
+    background-repeat: no-repeat;
+}
+
+#img_lower_right {
+    width: 200px;
+    height: 200px;
+    bottom: 0%;
+    right: 0%;
+    position: absolute;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvnTMeVOX2O_QD-pjdGT3vSBbiFfv0eVB84O2wjg5SoBOIgfGfIg2lU7n_g9VNHH0KJQg&usqp=CAU");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
 .header_after_lg_scrn {
     display: none;
 }

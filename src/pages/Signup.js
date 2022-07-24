@@ -8,8 +8,10 @@ function Signup() {
 
     return (
         <>
+        <div id="img_upper_left"></div>
+            <div id="img_lower_right"></div>
             <div className="Signup_container pt-5">
-                <div className="Signup_container_data">
+                <div className="Signup_container_data pt-5">
                     <div className="row">
                         <div className="col-lg-4 offset-lg-4 px-5 px-lg-1">
                             <div className="text-center">
