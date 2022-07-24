@@ -1,9 +1,12 @@
-import { Link } from 'react-router-dom';
 import LuxuryWeddingImg from '../content/images/LuxuryWeddingImg.jpg'
 import MakeupImg from '../content/images/MakeupImg.jpg'
 import DecorationImg from '../content/images/DecorationImg.jpg'
+import { useEffect } from 'react';
 
 function Gallery() {
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>
@@ -123,7 +126,7 @@ function Gallery() {
                             Reserves the date
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate voluptates ut iusto autem, enim dolore vitae laboriosam maiores iste repellendus ad, tenetur odit dignissimos sint quidem asperiores! Dolor, excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate voluptates ut iusto autem.</p>
-                        <button type="button" class="btn btn-dark py-2 px-3" style={{ float: "right" }}>Reserves the date</button>
+                        <button type="button" className="btn btn-dark py-2 px-3" style={{ float: "right" }}>Reserves the date</button>
                     </div>
                 </div>
             </div>

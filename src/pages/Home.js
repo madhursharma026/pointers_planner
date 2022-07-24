@@ -6,8 +6,13 @@ import LuxuryWeddingImg from '../content/images/LuxuryWeddingImg.jpg'
 import MakeupImg from '../content/images/MakeupImg.jpg'
 import DecorationImg from '../content/images/DecorationImg.jpg'
 import ServiceCard from './HomepageComponent/ServicesCard';
+import { useEffect } from 'react';
 
 function Home() {
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             <div id="CarouselHomepageSlider" className="carousel slide" data-bs-ride="true">
@@ -42,9 +47,9 @@ function Home() {
                 <h1 className="main_heading">
                     Our Services
                 </h1>
-                <div id="ServiceDivCarousel" class="carousel slide pt-3" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+                <div id="ServiceDivCarousel" className="carousel slide pt-3" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
                             <div className="row">
                                 <div className="col-12 col-md-6 col-lg-4 serviceBox1">
                                     <ServiceCard />
@@ -57,7 +62,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div className="carousel-item">
                             <div className="row">
                                 <div className="col-12 col-md-6 col-lg-4 serviceBox1">
                                     <ServiceCard />
@@ -70,7 +75,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div className="carousel-item">
                             <div className="row">
                                 <div className="col-12 col-md-6 col-lg-4 serviceBox1">
                                     <ServiceCard />
@@ -84,13 +89,13 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#ServiceDivCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#ServiceDivCarousel" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#ServiceDivCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                    <button className="carousel-control-next" type="button" data-bs-target="#ServiceDivCarousel" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
@@ -165,7 +170,7 @@ function Home() {
             </div>
 
             <div className="decoration_div container-xl px-3 pt-4 pb-md-4">
-                <button type="button" class="btn go_to_gallary_btn px-3" style={{ border: "1px solid #D8C5AA" }}><b>Go to Gallery <i class="fa fa-long-arrow-right"></i></b></button>
+                <Link to='/gallery' style={{ textDecoration: "none" }} className="btn go_to_gallary_btn px-3" style={{ border: "1px solid #D8C5AA" }}><b>Go to Gallery <i className="fa fa-long-arrow-right"></i></b></Link>
             </div>
 
             <br />
@@ -173,8 +178,8 @@ function Home() {
             <div className="image_and_intro_div container-xl px-3">
                 <div className="row">
                     <div className="col-md-6 col-xl-5 image_section order-md-2">
-                        <div class="card">
-                            <div class="card-body" style={{ border: "1px solid black" }}>
+                        <div className="card">
+                            <div className="card-body" style={{ border: "1px solid black" }}>
                                 <img src="https://www.theknot.com/tk-media/images/4f509983-0edc-4320-81f3-bb67621fd9af~rs_768.h" alt="#ImgNotFound" className='w-100' style={{ maxHeight: "400px" }} />
                             </div>
                         </div>
@@ -190,8 +195,8 @@ function Home() {
 
                 <div className="row pt-5">
                     <div className="col-md-6 col-xl-5 image_section">
-                        <div class="card">
-                            <div class="card-body" style={{ border: "1px solid black" }}>
+                        <div className="card">
+                            <div className="card-body" style={{ border: "1px solid black" }}>
                                 <img src="https://setmywed.com/blog/wp-content/uploads/2019/12/entry.jpg" alt="#ImgNotFound" className='w-100' style={{ maxHeight: "400px" }} />
                             </div>
                         </div>
@@ -215,7 +220,7 @@ function Home() {
                             Reserves the date
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate voluptates ut iusto autem, enim dolore vitae laboriosam maiores iste repellendus ad, tenetur odit dignissimos sint quidem asperiores! Dolor, excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate voluptates ut iusto autem.</p>
-                        <button type="button" class="btn btn-dark py-2 px-3" style={{ float: "right" }}>Reserves the date</button>
+                        <button type="button" className="btn btn-dark py-2 px-3" style={{ float: "right" }}>Reserves the date</button>
                     </div>
                 </div>
             </div>

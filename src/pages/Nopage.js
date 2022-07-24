@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 
 function NoPage() {
   return (
-    <>
-    <h1 className="text-center py-5">No Page</h1>
-    </>
+    <div className="text-center py-5">
+    <h1>Error 404</h1>
+    <Link to="/">GO TO HOME</Link>
+    </div>
   );
 }
 

@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from "react";
 
 function Services() {
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             <div className="service_div container-xl">
@@ -57,8 +61,8 @@ function Services() {
                 <div className="image_and_intro_div container-xl">
                     <div className="row pt-5">
                         <div className="col-lg-6 col-xl-5 image_section order-lg-2">
-                            <div class="card">
-                                <div class="card-body" style={{ border: "1px solid black" }}>
+                            <div className="card">
+                                <div className="card-body" style={{ border: "1px solid black" }}>
                                     <img src="https://www.theknot.com/tk-media/images/4f509983-0edc-4320-81f3-bb67621fd9af~rs_768.h" alt="#ImgNotFound" className='w-100' style={{ maxHeight: "400px" }} />
                                 </div>
                             </div>
@@ -74,8 +78,8 @@ function Services() {
 
                     <div className="row pt-5">
                         <div className="col-lg-6 col-xl-5 image_section">
-                            <div class="card">
-                                <div class="card-body" style={{ border: "1px solid black" }}>
+                            <div className="card">
+                                <div className="card-body" style={{ border: "1px solid black" }}>
                                     <img src="https://setmywed.com/blog/wp-content/uploads/2019/12/entry.jpg" alt="#ImgNotFound" className='w-100' style={{ maxHeight: "400px" }} />
                                 </div>
                             </div>
@@ -91,8 +95,8 @@ function Services() {
 
                     <div className="row pt-5">
                         <div className="col-lg-6 col-xl-5 image_section order-lg-2">
-                            <div class="card">
-                                <div class="card-body" style={{ border: "1px solid black" }}>
+                            <div className="card">
+                                <div className="card-body" style={{ border: "1px solid black" }}>
                                     <img src="https://www.theknot.com/tk-media/images/4f509983-0edc-4320-81f3-bb67621fd9af~rs_768.h" alt="#ImgNotFound" className='w-100' style={{ maxHeight: "400px" }} />
                                 </div>
                             </div>
