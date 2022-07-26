@@ -45,8 +45,8 @@ const pdata = [
 function Charts() {
     return (
         <>
-            <div class="card mb-5">
-                <div class="card-body" style={{border:"1px solid black"}}>
+            <div className="card mb-5">
+                <div className="card-body" style={{border:"1px solid black"}}>
                     <ResponsiveContainer aspect={3} style={{width:"100%"}}>
                         <LineChart data={pdata}>
                             <CartesianGrid />

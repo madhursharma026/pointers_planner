@@ -9,7 +9,7 @@ export default function MainLayout() {
                 <div className="fixed-top">
                     <Header />
                 </div>
-                <div style={{ marginTop: "70px" }}>
+                <div className='main_layout'>
                     <Outlet />
                     <Footer />
                 </div>

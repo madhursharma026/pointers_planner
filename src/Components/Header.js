@@ -19,7 +19,7 @@ function Header() {
             <nav class="navbar navbar-expand-lg bg-light header_before_lg_scrn" style={{ boxShadow: `${headerBoxShadow ? "0 4px 2px -2px rgba(0, 0, 0, .2)" : ""}` }}>
                 <div class="container-fluid">
                     <Link class="navbar-brand" to="/">
-                        <img src={Logo} alt="#ImgNotFound" style={{ width: "200px" }} />
+                        <img src={Logo} alt="#ImgNotFound" style={{ maxWidth: "70px" }} />
                     </Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -64,14 +64,15 @@ function Header() {
                     <div className="row">
                         <div className="col-6 col-md-5">
                             <div className='row'>
-                                <div className="col-3 col-sm-2">
-                                    <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <div className="col-4 col-sm-3">
+                                    <button class="navbar-toggler mx-3 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
                                     </button>
                                 </div>
-                                <div className="col-9 col-sm-8"><Link class="navbar-brand px-3" to="/">
-                                    <img src="https://www.qceventplanning.com/blog/wp-content/themes/qcevent_blog/images/pointers-for-planners-logo.png" alt="#ImgNotFound" className='w-100' />
-                                </Link>
+                                <div className="col-4 col-sm-3" style={{ maxHeight: "70px" }}>
+                                    <Link class="navbar-brand p-3" to="/">
+                                        <img src={Logo} alt="#ImgNotFound" className='w-100' />
+                                    </Link>
                                 </div>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-3">

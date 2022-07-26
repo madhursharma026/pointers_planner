@@ -4,7 +4,7 @@ function MyProfileOrder() {
     return (
         <>
             <h4><i className="fa fa-first-order"></i> Orders</h4>
-            <table class="table mt-5">
+            <table className="table mt-5">
                 <thead>
                     <tr>
                         <th scope="col"><input type="checkbox" /></th>
@@ -24,7 +24,7 @@ function MyProfileOrder() {
                         <td>Doe</td>
                         <td className="text-success">Active</td>
                         <td className="text-primary">Completed</td>
-                        <td><i class="fa fa-pencil" style={{ color: "red" }}></i>&emsp;<i class="fa fa-trash-o" style={{ color: "red" }}></i></td>
+                        <td><i className="fa fa-pencil" style={{ color: "red" }}></i>&emsp;<i className="fa fa-trash-o" style={{ color: "red" }}></i></td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" /></td>
@@ -33,7 +33,7 @@ function MyProfileOrder() {
                         <td>Doe</td>
                         <td className="text-danger">Active</td>
                         <td className="text-dark">pending</td>
-                        <td><i class="fa fa-pencil" style={{ color: "red" }}></i>&emsp;<i class="fa fa-trash-o" style={{ color: "red" }}></i></td>
+                        <td><i className="fa fa-pencil" style={{ color: "red" }}></i>&emsp;<i className="fa fa-trash-o" style={{ color: "red" }}></i></td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" /></td>
@@ -42,7 +42,7 @@ function MyProfileOrder() {
                         <td>Doe</td>
                         <td className="text-success">Active</td>
                         <td className="text-primary">Completed</td>
-                        <td><i class="fa fa-pencil" style={{ color: "red" }}></i>&emsp;<i class="fa fa-trash-o" style={{ color: "red" }}></i></td>
+                        <td><i className="fa fa-pencil" style={{ color: "red" }}></i>&emsp;<i className="fa fa-trash-o" style={{ color: "red" }}></i></td>
                     </tr>
                 </tbody>
             </table>

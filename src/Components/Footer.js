@@ -37,13 +37,13 @@ function Footer() {
               <h5 className="pt-4 pb-4"><b>Social Media</b></h5>
               <div className="row">
                 <div className="col-4">
-                  <Link class="fa fa-twitter" style={{ textDecoration: "none", color: "black", fontSize: "30px" }} to="/"></Link>
+                  <Link className="fa fa-twitter" style={{ textDecoration: "none", color: "black", fontSize: "30px" }} to="/"></Link>
                 </div>
                 <div className="col-4">
-                  <Link class="fa fa-facebook" style={{ textDecoration: "none", color: "black", fontSize: "30px" }} to="/"></Link>
+                  <Link className="fa fa-facebook" style={{ textDecoration: "none", color: "black", fontSize: "30px" }} to="/"></Link>
                 </div>
                 <div className="col-4">
-                  <Link class="fa fa-instagram" style={{ textDecoration: "none", color: "black", fontSize: "30px" }} to="/"></Link>
+                  <Link className="fa fa-instagram" style={{ textDecoration: "none", color: "black", fontSize: "30px" }} to="/"></Link>
                 </div>
               </div>
             </div>

@@ -74,6 +74,9 @@
     .go_to_gallary_btn {
         float: right;
     }
+    .main_layout{
+        margin-top: 90px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -95,6 +98,9 @@
 
     .videography4 {
         display: none;
+    }
+    .main_layout{
+        margin-top: 70px;
     }
 }
 

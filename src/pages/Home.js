@@ -7,6 +7,7 @@ import MakeupImg from '../content/images/MakeupImg.jpg'
 import DecorationImg from '../content/images/DecorationImg.jpg'
 import ServiceCard from './HomepageComponent/ServicesCard';
 import { useEffect } from 'react';
+import GalleryImageSection from './GalleryImageSection/GalleryImageSection';
 
 function Home() {
     useEffect(() => {
@@ -105,7 +106,8 @@ function Home() {
                 <h1 className="main_heading">
                     Luxury Wedding
                 </h1>
-                <div className="row">
+                <GalleryImageSection />
+                {/* <div className="row">
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 p-2 luxury_wedding1">
                         <img src={LuxuryWeddingImg} alt="#ImgNotFound" className='w-100' />
                     </div>
@@ -130,7 +132,7 @@ function Home() {
                     <div className="col-md-4 col-lg-3 p-2 luxury_wedding8">
                         <img src={LuxuryWeddingImg} alt="#ImgNotFound" className='w-100' />
                     </div>
-                </div>
+                </div> */}
             </div>
 
 

@@ -17,8 +17,8 @@ function SelectedServices() {
                     <h3 className="sub_heading">
                         Selected Services
                     </h3>
-                    <div class="card" style={{ border: "2px solid #E2B9E3", borderRadius: "15px" }}>
-                        <div class="card-body">
+                    <div className="card" style={{ border: "2px solid #E2B9E3", borderRadius: "15px" }}>
+                        <div className="card-body">
                             <div className="row">
                                 <div className="col-md-4 image_section order-md-2">
                                     <img src="https://www.theknot.com/tk-media/images/4f509983-0edc-4320-81f3-bb67621fd9af~rs_768.h" alt="#ImgNotFound" className='w-100' style={{ maxHeight: "250px", borderRadius: "15px" }} />
@@ -45,7 +45,7 @@ function SelectedServices() {
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn mt-3 py-2 px-4" style={{ float: "right", background: "#EFECCE", fontSize: "20px" }} data-bs-toggle="modal" data-bs-target="#OpenModalForPayment"><b>Procees to payment</b></button>
+                    <button type="button" className="btn mt-3 py-2 px-4" style={{ float: "right", background: "#EFECCE", fontSize: "20px" }} data-bs-toggle="modal" data-bs-target="#OpenModalForPayment"><b>Procees to payment</b></button>
                 </div>
                 <br />
                 <br />
@@ -74,7 +74,7 @@ function SelectedServices() {
                         <input type="email" placeholder='Email' className='w-100 form-control mb-3' />
                         <input type="text" placeholder='Phone Number' className='w-100 form-control mb-3' />
                         <textarea rows="5" style={{ width: "100%" }}></textarea>
-                        <button type="button" class="btn mt-3 py-2 px-4" style={{ float: "right", background: "#EFECCE", fontSize: "18px" }}><b>Send</b></button>
+                        <button type="button" className="btn mt-3 py-2 px-4" style={{ float: "right", background: "#EFECCE", fontSize: "18px" }}><b>Send</b></button>
                     </div>
                 </div>
 
@@ -111,13 +111,13 @@ function SelectedServices() {
                 </div>
             </div>
 
-            <div class="modal fade" id="OpenModalForPayment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="OpenModalForPaymentLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="modal fade" id="OpenModalForPayment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="OpenModalForPaymentLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body px-3">
+                        <div className="modal-body px-3">
                             <h5 className="sub_heading_color">
                                 Payment Details
                             </h5>
@@ -145,21 +145,21 @@ function SelectedServices() {
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#OpenModalForPaymentSuccess">Continue</button>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#OpenModalForPaymentSuccess">Continue</button>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="modal fade" id="OpenModalForPaymentSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="OpenModalForPaymentSuccessLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="modal fade" id="OpenModalForPaymentSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="OpenModalForPaymentSuccessLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body px-3 text-center">
+                        <div className="modal-body px-3 text-center">
                             <h5 className="sub_heading_color">
                                 Congrulations
                             </h5>
@@ -171,8 +171,8 @@ function SelectedServices() {
                                 $1000
                             </h5>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Okay</button>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-dark w-100" data-bs-dismiss="modal">Okay</button>
                         </div>
                     </div>
                 </div>
